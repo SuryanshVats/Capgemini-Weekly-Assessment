@@ -51,7 +51,7 @@ public class LoanServiceTest {
     @Test
     void testLoanCategory() {
         assertAll(
-                () -> assertEquals("Premium", service.getLoanCategory(200)),
+                () -> assertEquals("Premium", service.getLoanCategory(800)),
                 () -> assertEquals("Standard", service.getLoanCategory(650)),
                 () -> assertEquals("High Risk", service.getLoanCategory(500))
         );
@@ -62,3 +62,4 @@ public class LoanServiceTest {
         assertNotNull(service.getLoanCategory(750));
     }
 }
+
